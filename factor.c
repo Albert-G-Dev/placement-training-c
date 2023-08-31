@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main()
+int main()
 {
     int a=55;
      printf("Factors are : ");
@@ -8,6 +8,13 @@ void main()
     {
         if(a%i==0){
            printf("\n%d ",i);
+           for(int j=1;j<=i;j++)
+    {
+        if(i%j==0){
+           printf("\n\t%d sub factors are :",j);
         }
     }
+        }
+    }
+    return 4;
 }
